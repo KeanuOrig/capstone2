@@ -1,0 +1,16 @@
+
+*{
+  font-family: 'Anonymous Pro', monospace;
+   margin: 0px;
+   padding: 0px;
+}
+.row{
+  margin: 0px!important;
+}
+.jumbotron{
+    background-image: url(./../images/wp2252568-commerce-wallpapers.jpg);
+    height: 100vh;
+    background-position:center;
+    border-radius: 0px!important;
+    margin-bottom: 0px!important;
+}
