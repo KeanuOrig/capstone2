@@ -11,7 +11,7 @@ if(admin == "true"){
 
 	`
 		<div class="col-md-2 mt-5 offset-md-10">
-			<a href="./createproduct.html" class="btn btn-primary">
+			<a href="./createProduct.html" class="btn btn-primary">
 				Create Product
 			</a>
 		</div>
@@ -37,18 +37,18 @@ if(admin == "true"){
 				if (product.isActive) {
 					cardFooter =
 					`
-						<a href="./archiveproduct.html?productId=${product._id}" class="btn btn-danger btn-block">Archive product</a>
+						<a href="./archiveProduct.html?productId=${product._id}" class="btn btn-danger btn-block">Archive product</a>
 
-						<a href="./editproduct.html?productId=${product._id}" class="btn btn-primary btn-block">Edit product</a>
+						<a href="./editProduct.html?productId=${product._id}" class="btn btn-primary btn-block">Edit product</a>
 
-						<a href="./deleteproduct.html?productId=${product._id}" class="btn btn-secondary btn-block">Delete product</a>
+						<a href="./deleteProduct.html?productId=${product._id}" class="btn btn-secondary btn-block">Delete product</a>
 					`
 				} else {
 					cardFooter =
 					`
-						<a href="./unarchiveproduct.html?productId=${product._id}" class="btn btn-success btn-block">Unarchive product</a>
+						<a href="./unarchiveProduct.html?productId=${product._id}" class="btn btn-success btn-block">Unarchive product</a>
 
-						<a href="./deleteproduct.html?productId=${product._id}" class="btn btn-secondary btn-block">Delete product</a>
+						<a href="./deleteProduct.html?productId=${product._id}" class="btn btn-secondary btn-block">Delete product</a>
 					`
 
 				}
