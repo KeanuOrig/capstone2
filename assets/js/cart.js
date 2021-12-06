@@ -57,12 +57,13 @@ if(admin == "true"){
 	})
 	.then( response => response.json())
 	.then( response =>{
-	let orderObject = [response]
-	let orderArray = response
+
+	let orderObject = [response];
+	let orderArray = response;
 
 		if(orderObject.length < 1){ 
 		//if array empty
-			orderData = `No products Available`
+			orderData = `No products Available`;
 
 		
 		} else {
@@ -98,11 +99,12 @@ if(admin == "true"){
 					}
 					
 				}
-				let countValue = Object.values(counts)
+				let countValue = Object.values(counts);
 				
 				let first = finalProduct.join("<br>");
 				let second = countValue.join("<br>Quantity: ");
 				addFooter = 
+				(
 					`
 						<table>
 						  <tr>
@@ -114,7 +116,7 @@ if(admin == "true"){
 						  </tr>
 						</table>
 					`
-				
+				)
 			
 				///////////////////////////////////////////
 				//display products
@@ -154,6 +156,9 @@ if(admin == "true"){
 		}
 		
 	}) 
+	.catch(function (error) {
+	       alert(`Error`)
+	   });
 }
 
 
